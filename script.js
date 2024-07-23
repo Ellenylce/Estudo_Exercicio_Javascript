@@ -138,6 +138,7 @@ for (let i = 0; i < numeros.length; i++) {
 }
 // Imprimindo o array de números pares
 console.log(pares);
+console.log("\n");
 
 // 13.Crie um programa que:
 // a. Tenha uma função que recebe 3 parâmetros (notas) e retorne a média;
@@ -172,6 +173,7 @@ let nota2 = 7;
 let nota3 = 9;
 let media = calcularMedia(nota1, nota2, nota3);
 avaliarMedia(media);
+console.log("\n");
 
 // 14.Crie um programa que calcule o IMC e exiba na tela junto com a situação. O Índice de Massa Corpórea (IMC) é um valor calculado baseado na altura e no peso de uma pessoa. De acordo com o valor do IMC, podemos classificar o indivíduo dentro de certas faixas. O IMC é calculado pela expressão peso/altura2 (peso dividido pelo quadrado da altura)
 // a. abaixo de 18.5: Abaixo do peso
@@ -212,6 +214,7 @@ let peso = 70;   // Peso em kg
 let altura = 1.75; // Altura em metros
 let imc = calcularIMC(peso, altura);
 avaliarIMC(imc);
+console.log("\n");
 
 // 15.Escreva um programa que leia um número qualquer e mostre a tabuada desse número, usando a estrutura “for”.
 // a. exemplo de saída para a entrada de número 8:
@@ -243,6 +246,7 @@ console.log("15.Escreva um programa que leia um número qualquer e mostre a tabu
 //     var divisao = numero1/numero2;
 //     console.log(divisao);
 // }
+console.log("\n");
 
 // 17.Um motorista faz diversas viagens. Ele está em um carro que faz 9.8km por litro (considere o litro da gasolina 5.24R$). Crie um programa que receba a distância que será percorrida e calcule quanto ele deve gastar para ir e voltar. Você pode usar a função toFixed() do JS para ajustar as casas decimais.
 // Ex:
@@ -252,7 +256,16 @@ console.log("15.Escreva um programa que leia um número qualquer e mostre a tabu
 // i. Para fazer 2900kms você deve abastecer
 // 3101.22R$
 console.log("17. Crie um programa que receba a distância que será percorrida e calcule quanto ele deve gastar para ir e voltar.");
-
+// var distancia = parsetfloat(prompt("Digite a distância:"));
+var distancia = 2900
+var consumoKmPorLitro = 9.8;
+var precoPorLitro = 5.24;
+var distanciaTotal = distancia * 2;
+var litrosNecessarios = distanciaTotal / consumoKmPorLitro;
+var custoTotal = litrosNecessarios * precoPorLitro;
+var gastoFinal = custoTotal.toFixed(2);
+console.log("Para fazer "+ distancia + "kms você deve abastecer: "+ gastoFinal + "R$");
+console.log("\n");
 
 // 18.Escreva um programa que recebe um valor e calcula seu valor fatorial. O fatorial de um número é o produto dele pelos seus antecessores maiores que 0. Por exemplo:
 // a. 5! (lê-se 5 fatorial) = 5 x 4 x 3 x 2 x 1 = 120
@@ -277,11 +290,9 @@ console.log("19.Escreva um programa que leia o array [12, 36, 52, 77] e imprime 
 let conjNumeros = [12, 36, 52, 77];
 var resultadoSoma = [];
 for(let i = 0; i < conjNumeros.length; i++){
-    console.log(i);
-    resultadoSoma = conjNumeros.push[i] + 7;
-    console.log(resultadoSoma);
+    resultadoSoma.push(conjNumeros[i] + 7);
 }
-
+console.log(resultadoSoma);
 console.log("\n");
 
 // 20.Raimundo fará uma prova. Ao chegar lá ele deve se identificar usando a carteira de identidade ou de motorista. Faça um programa que verifique sua identidade e indique se ele pode ou não fazer a prova.
