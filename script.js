@@ -18,7 +18,7 @@ console.log("\n");
 // 3.Acessar o terceiro elemento da lista ['maça', 'Banana', 'Laranja', 'Uva']
 console.log("3.Acessar o terceiro elemento da lista ['maça', 'Banana', 'Laranja', 'Uva']")
 var frutas = ['maça', 'Banana', 'Laranja', 'Uva']
-console.log(frutas[3])
+console.log(frutas[2])
 console.log("\n");
 // 4. Crie uma função que calcule a área do quadrado em metros. Quadrado é a figura que tem todos os lados iguais.
 // a. formula: lado x lado ou lado2
@@ -79,7 +79,6 @@ console.log("7.se os valores de A e B forem iguais, deverá somar os dois valore
 console.log("\n");
 
 // 8. O que acontece na execução do código a seguir? E se trocar a declaração da variável por let?
-
 console.log("8. O que acontece na execução do código a seguir? E se trocar a declaração da variável por let?");
 console.log("Resposta: neste caso obterá um erro ReferenceError: contador is not defined, pois let é limitada ao bloco onde foi definida: um bloco é delimitado por {}");
 // for(let contador = 0; contador < 5; contador++){
@@ -221,12 +220,83 @@ avaliarIMC(imc);
 // iii. 8 x 3 = 24
 // iv. ...
 // v. 8 x 10 = 80
-console.log("Escreva um programa que leia um número qualquer e mostre a tabuada desse número, usando a estrutura “for”.");
+console.log("15.Escreva um programa que leia um número qualquer e mostre a tabuada desse número, usando a estrutura “for”.");
 // Ler o numero qualquer do usuario
-let numeroTabuada = parseInt(prompt("Digite um número:"));
+// let numeroTabuada = parseInt(prompt("Digite um número:"));
 
-// Loop para calcular e exibir a tabuada de 1 a 10
-for (let i = 1; i <= 10; i++) {
-    let resultado = numeroTabuada * i;
-    console.log(numeroTabuada + " x "+ i + " = " + resultado);
+// // Loop para calcular e exibir a tabuada de 1 a 10
+// for (let i = 1; i <= 10; i++) {
+//     let resultado = numeroTabuada * i;
+//     console.log(numeroTabuada + " x "+ i + " = " + resultado);
+// }
+
+// 16.Interprete o diagrama a seguir e crie seu código
+// console.log("16.Interprete o diagrama a seguir e crie seu código");
+// var numero1 = parseInt(prompt("Digite o primeiro número"));
+// var numero2 = parseInt(prompt("Digite o segundo número"));
+// try{
+//     if(numero2 === 0) throw new RangeError ("Não pode dividir por zero");
+// }catch (erro){
+//     console.error("Erro na divisão: " + erro);
+// }
+// if (numero2 > 0){
+//     var divisao = numero1/numero2;
+//     console.log(divisao);
+// }
+
+// 17.Um motorista faz diversas viagens. Ele está em um carro que faz 9.8km por litro (considere o litro da gasolina 5.24R$). Crie um programa que receba a distância que será percorrida e calcule quanto ele deve gastar para ir e voltar. Você pode usar a função toFixed() do JS para ajustar as casas decimais.
+// Ex:
+// a. let valorFinal = (valorCalculado).toFixed(2) /* 2
+// casas depois da vírgula */
+// b. exemplo de saída esperada:
+// i. Para fazer 2900kms você deve abastecer
+// 3101.22R$
+console.log("17. Crie um programa que receba a distância que será percorrida e calcule quanto ele deve gastar para ir e voltar.");
+
+
+// 18.Escreva um programa que recebe um valor e calcula seu valor fatorial. O fatorial de um número é o produto dele pelos seus antecessores maiores que 0. Por exemplo:
+// a. 5! (lê-se 5 fatorial) = 5 x 4 x 3 x 2 x 1 = 120
+// b. Adicione o lançamento de exceção quando for necessário.
+// c. exemplo de saída esperada:
+// i. “O fatorial de 5 é 120”
+console.log("18.Escreva um programa que recebe um valor e calcula seu valor fatorial.");
+// let valor = parseInt(prompt("Digite um valor"));
+//     var fatorial = 1;
+// for(let i = valor; i > 0; i--){
+//     // console.log(i);
+    
+//     fatorial = fatorial * i;
+// }
+// console.log(fatorial);
+console.log("\n");
+
+// 19.Escreva um programa que leia o array [12, 36, 52, 77] e imprime um novo array com a soma de cada elemento por 7.
+// a. exemplo de saída esperada
+// i. [19, 43, 59, 84]
+console.log("19.Escreva um programa que leia o array [12, 36, 52, 77] e imprime um novo array com a soma de cada elemento por 7.");
+let conjNumeros = [12, 36, 52, 77];
+var resultadoSoma = [];
+for(let i = 0; i < conjNumeros.length; i++){
+    console.log(i);
+    resultadoSoma = conjNumeros.push[i] + 7;
+    console.log(resultadoSoma);
 }
+
+console.log("\n");
+
+// 20.Raimundo fará uma prova. Ao chegar lá ele deve se identificar usando a carteira de identidade ou de motorista. Faça um programa que verifique sua identidade e indique se ele pode ou não fazer a prova.
+// a. A verificação é fictícia, apenas variáveis com valores booleanos.
+console.log("20.Raimundo fará uma prova. Ao chegar lá ele deve se identificar usando a carteira de identidade ou de motorista. Faça um programa que verifique sua identidade e indique se ele pode ou não fazer a prova.");
+let identidade = true;
+let c_motorista = false;
+if(identidade === true || c_motorista === true){
+    console.log("Raimundo poderá fazer a prova");
+}else if (identidade === false || c_motorista === false){
+    console.log("Raimundo não poderá fazer a prova");
+}
+console.log("\n");
+
+// 21.Qual a saída do código a seguir?
+console.log("21.Qual a saída do código a seguir?");
+    var frutas = ["maçã", "banana", "laranja"]
+    console.log (frutas[3]);
